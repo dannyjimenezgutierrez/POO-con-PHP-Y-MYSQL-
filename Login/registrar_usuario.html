@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro VTV | Canal 8</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <center>
+                <img src="logo-VTV.png" alt="Logo de VTV" class="login-logo">
+            </center>
+            <div class="login-header">
+                <h4>Registro de Usuario</h4>
+                <h6>VTV Canal 8</h6> 
+            </div>
+
+            <form class="login-form" id="registroForm" novalidate>
+                <div class="form-row">
+                    <!-- Nombre completo -->
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="nombre" name="nombre" required autocomplete="name">
+                            <label>Nombre completo</label>
+                        </div>
+                    </div>
+            
+                    <!-- Cédula -->
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="cedula" name="cedula" required autocomplete="off">
+                            <label>Cédula</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="errorNombre" style="color: black; margin-top: 5px;"></div>
+                <div id="errorCedula" style="color: black; margin-top: 5px;"></div>
+            
+                <div class="form-row">
+                    <!-- Usuario -->
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="text" id="usuario" name="usuario" required autocomplete="username">
+                            <label>Usuario</label>
+                        </div>
+                    </div>
+            
+                    <!-- Email -->
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                            <label>Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="errorUsuario" style="color: black; margin-top: 5px;"></div>
+                <div id="errorEmail" style="color: black; margin-top: 5px;"></div>
+            
+                <div class="form-row">
+                    <!-- Contraseña -->
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="password" id="contraseña" name="contraseña" required autocomplete="new-password">
+                            <label>Contraseña</label>
+                        </div>
+                    </div>
+            
+                    <!-- Confirmar contraseña -->
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <input type="password" id="confirmarContraseña" name="confirmarContraseña" required autocomplete="new-password">
+                            <label>Confirmar contraseña</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="errorContraseña" style="color: black; margin-top: 5px;"></div>
+                <div id="errorConfirmarContraseña" style="color: black; margin-top: 5px;"></div>
+            
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Registrarse</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+            
+            <style>
+            .form-row {
+                display: flex;
+                gap: 15px; /* espacio entre columnas */
+                flex-wrap: wrap; /* se adapta en pantallas pequeñas */
+            }
+            .form-row .form-group {
+                flex: 1; /* cada input ocupa igual espacio */
+                min-width: 150px; /* evita que se achiquen demasiado */
+            }
+            .input-wrapper {
+                position: relative;
+            }
+            .input-wrapper input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .input-wrapper label {
+                position: absolute;
+                top: -8px;
+                left: 10px;
+                background: white;
+                padding: 0 5px;
+                font-size: 12px;
+                color: #555;
+            }
+            </style>
+            
+
+            <div style="text-align: center; margin-top: 10px; font-size: 14px;">
+                ¿Ya tienes cuenta? 
+                <a href="index.html" style="color: #1d4ed8; text-decoration: underline;">
+                    Pulsa aquí para iniciar sesión
+                </a>
+            </div><br>
+
+            <center>
+                <h5>Todos los Derechos Reservados VTV Canal 8 @ 2025</h5>
+            </center> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Aquí puedes agregar la validación en JS similar a login
+        const registroForm = document.getElementById('registroForm');
+
+        registroForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            // Validaciones de cada campo
+            // Por ejemplo:
+            // validarNombre(), validarCedula(), validarUsuario(), validarEmail(), validarContraseña(), validarConfirmarContraseña()
+        });
+    </script>
+</body>
+</html>

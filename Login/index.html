@@ -1,84 +1,94 @@
+<!-----------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------|
+| NOMBRE    :  DANNY JOSE JIMENEZ GUTIERREZ                                                                  |
+| CEDULA    :  16.029.567                                                                                    |
+| TELEFONO  :  0424-281-44-55                                                                                |
+| CORREO    :  DENNALY88@GMAIL.COM                                                                           |
+|------------------------------------------------------------------------------------------------------------|
+|  SISTEMA    : PHP , POO , MYSQL                                                                            |
+|  DESARROLLADOR WEB                                                                                         |
+|  MIRANDA , CUA  2025                                                                                       |
+-------------------------------------------------------------------------------------------------------------|
+------------------------------------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html lang="en">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>VTV | Canal 8</title>
-        <link rel="icon" type="image/png" href="favicon.ico">
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="imagenes/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/all.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="login-container">
         <div class="login-card">
-           <center> <img src="logo-VTV.png" alt="Logo de VTV" class="login-logo">
+           <center> <img src="imagenes/logo-VTV.png" alt="Logo de VTV" class="login-logo">
             <div class="login-header">
                 <h4>Venezolana de Televisión</h4>
                 <h6>Así Somos</h6> 
-            </div>
-            
-            <form class="login-form" id="loginForm" method="POST" action="validar_usuario.php">
+            </div>        
+    <form class="login-form" id="loginForm" method="POST" action="php/validar_usuario.php">
                 <div class="form-group">
                     <div class="input-wrapper">
                         <input type="text" id="usuario" name="usuario" placeholder="Usuario">
                         <label>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6c757d" width="24px" height="24px">
-    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-</svg>  </label>
-                        
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6c757d" width="24px" height="24px"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                          </svg>  
+                        </label>
                     </div>
                 </div>
                 <div id="errorUsuario" style="color: rgb(18, 18, 18); margin-top: 5px;"></div>
-<br>
-
+              <br>
                 <div class="form-group">
                     <div class="input-wrapper">
                         <input type="password" id="clave" name="clave" placeholder="Contraseña"  autocomplete="current-password">
-                        <label for="contraseña"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-</svg> </label>
+                        <label for="contraseña">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg> </label>
                         <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">
-                            <i id="toggleIcon" class="fas fa-eye-slash"></i> <!-- Ojo cerrado por defecto -->
+                            <i id="toggleIcon" class="fas fa-eye-slash"></i>
                         </button>
                     </div>  
                     <br>
                 </div>
-
-                
-
                 <button type="submit" class="login-btn">
                     <span class="btn-text">Enviar</span>
                     <span class="btn-loader"></span>
                 </button>
-            </form>
-           
-           
+        </form>
+
             <div style="text-align: center; margin-top: 10px; font-size: 14px;">
-                ¿No estás registrado? <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-    <line x1="5" y1="12" x2="19" y2="12"></line>
-    <polyline points="12 5 19 12 12 19"></polyline>
-</svg>
+                ¿No estás registrado? 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 <a href="registrar_usuario.html" style="color: #1d4ed8; text-decoration: underline;">
-                <button class="inline-btn">
-                    Pulsa aquí
-                </button>
+                    <button class="inline-btn">
+                        Pulsa aquí
+                    </button>
                 </a>
             </div><br>
-           
-            
-                
                 <h6>  © Todos los Derechos Reservados 2025.    </h6>
-                <img src="favicon.ico" alt="logo" />
-                
-               
-    
-            
-    
+                <img src="imagenes/favicon.ico" alt="logo" />
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+    <script src="js/sweetalert2@11.js"></script>
 
+</body>
 </html>
+
+<!-----------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------|
+| NOMBRE    :  DANNY JOSE JIMENEZ GUTIERREZ                                                                  |
+| CEDULA    :  16.029.567                                                                                    |
+| TELEFONO  :  0424-281-44-55                                                                                |
+| CORREO    :  DENNALY88@GMAIL.COM                                                                           |
+|------------------------------------------------------------------------------------------------------------|
+|  SISTEMA    : PHP , POO , MYSQL                                                                            |
+|  DESARROLLADOR WEB                                                                                         |
+|  MIRANDA , CUA  2025                                                                                       |
+-------------------------------------------------------------------------------------------------------------|
+------------------------------------------------------------------------------------------------------------->

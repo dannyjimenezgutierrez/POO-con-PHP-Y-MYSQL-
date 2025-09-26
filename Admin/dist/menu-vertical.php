@@ -1,225 +1,195 @@
-<nav class="navbar navbar-header navbar-expand navbar-light navbar-shadow">
-
-    <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
-
-
-
-    <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
- &nbsp;&nbsp;
-<ul class="navbar-nav">
-    <li class="dropdown nav-icon me-6">
-        <a href="#" id="maximizeToggle" class="nav-link nav-link-lg nav-link-user">
-            <div class="d-lg-inline-block position-relative">
-                <i id="iconMaximize" data-feather="maximize"></i>
-                <span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle"></span>
-            </div>
-        </a>
-    </li>
-</ul>
-
- &nbsp;&nbsp;
-
-
- <div class="d-none d-md-block text-start">
-      <span class="btn btn-sm btn-outline-secondary py-0 px-2" 
-            style="font-size:0.9rem; line-height:1,5;">
-<?php include ('reloj.php');?>
-        
-      </span>
-    </div>
-&nbsp;&nbsp;
-
-
- <div class="d-none d-md-block text-start">
-      <span class="btn btn-sm btn-outline-secondary py-0 px-2" 
-            style="font-size:0.9rem; line-height:1,5;">
-<?php include ('fecha.php');?>
-
-        
-      </span>
-    </div>
-
-&nbsp;&nbsp;
-
-
- <div class="d-none d-md-block text-start">
-      <span class="btn btn-sm btn-outline-secondary py-0 px-2" 
-            style="font-size:0.9rem; line-height:1,5;">
-Perfil: Administrador
-
-        
-      </span>
-    </div>
+<!-----------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------|
+| NOMBRE    :  DANNY JOSE JIMENEZ GUTIERREZ                                                                  |
+| CEDULA    :  16.029.567                                                                                    |
+| TELEFONO  :  0424-281-44-55                                                                                |
+| CORREO    :  DENNALY88@GMAIL.COM                                                                           |
+|------------------------------------------------------------------------------------------------------------|
+|  SISTEMA    : PHP , POO , MYSQL                                                                            |
+|  DESARROLLADOR WEB                                                                                         |
+|  MIRANDA , CUA  2025                                                                                       |
+-------------------------------------------------------------------------------------------------------------|
+------------------------------------------------------------------------------------------------------------->
 
 
     
-    
-    <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
+<div id="sidebar" class='active'>
 
-           
+<div class="sidebar-wrapper active d-flex flex-column">
 
-<li class="dropdown nav-icon me-3">
-                <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                    <div class="d-lg-inline-block">
-                        <i data-feather="mail"></i>
-                        <span class="badge bg-secondary rounded-pill position-absolute top-0 start-100 translate-middle">1</span>
+<div class="sidebar-header text-center py-4 px-3 border-bottom bg-white" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+    <a href="#" class="text-decoration-none text-dark d-block">
+            <div class="d-flex flex-column align-items-center">
+                 <img src="img/logo-VTV.png" alt="Logo de Venezolana de Televisión, Canal 8" class="img-fluid mb-3" style=" width: 90px; height: 65px; max-width: 100%; border-radius: 20px; padding: 12px; background: #ffffff; border: 1px solid #ddd; box-shadow: 0 14px 50px rgba(0,0,0,0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 18px 60px rgba(0,0,0,0.35)';"onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 14px 90px rgba(0,0,0,0.3)';">
+                    <div>
+                            <h5 class="fw-bolder mb-1" style="color: #404143ff; letter-spacing: 0.4px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);">
+                                Venezolana de Televisión
+                            </h5>
+                            <h6 class="fw-bold mb-0" style="color: #526878ff; letter-spacing: 0.5px;">Canal 8</h6>
+                            <hr class="mx-auto my-2" style="width: 120px; border-top: 2px solid #535353ff; opacity: 0.5;">
                     </div>
-                </a>
-                <div class="dropdown-menu dropdown-menu-end dropdown-menu-large">
-                    <h6 class='py-2 px-4'>Mensajes</h6>
-                    <ul class="list-group rounded-none">
-                        <li class="list-group-item border-0 d-flex align-items-center">
-                            <div class="avatar bg-primary me-3">
-                                <span class="avatar-content"><i data-feather="message-circle"></i></span>
-                            </div>
-                            <div>
-                                <h6 class='text-bold mb-0'>Soporte</h6>
-                                <small class='text-xs text-muted'>Tienes un nuevo mensaje de soporte</small>
-                            </div>
-                        </li>
-
-                    </ul>
-                    
-                    <a href="#" class="dropdown-item text-center">Ir a la bandeja de entrada</a>
-                </div>
-            </li>
-
-
-            <li class="dropdown nav-icon me-3">
-                <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                    <div class="d-lg-inline-block">
-                        <i data-feather="upload"></i>
-                        <span class="badge bg-primary rounded-pill position-absolute top-0 start-100 translate-middle"></span>
-                    </div>
-                </a>
-                <div class="dropdown-menu dropdown-menu-end dropdown-menu-large">
-                    <h6 class='py-2 px-4'>Mensajes</h6>
-                    <ul class="list-group rounded-none">
-                        <li class="list-group-item border-0 d-flex align-items-center">
-                            <div class="avatar bg-primary me-3">
-                                <span class="avatar-content"><i data-feather="message-circle"></i></span>
-                            </div>
-                            <div>
-                                <h6 class='text-bold mb-0'>Soporte</h6>
-                                <small class='text-xs text-muted'>Tienes un nuevo mensaje de soporte</small>
-                            </div>
-                        </li>
-
-                    </ul>
-                    
-                    <a href="#" class="dropdown-item text-center">Ir a la bandeja de entrada</a>
-                </div>
-            </li>
- 
-
-
-
-            
-
-    
-
-
-
-<ul class="navbar-nav">
-    <li class="dropdown nav-icon me-3">
-        <a href="#" id="refresh" class="nav-link nav-link-lg nav-link-user">
-            <div class="d-lg-inline-block position-relative">
-                <i id="iconMaximize" data-feather="refresh-cw"></i>
-                <span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle"></span>
             </div>
-        </a>
-    </li>
-</ul>
-
-<ul class="navbar-nav">
-    <li class="dropdown nav-icon me-3">
-        <a href="#" id="Salir" class="nav-link nav-link-lg nav-link-user">
-            <div class="d-lg-inline-block position-relative">
-                <i id="iconMaximize" data-feather="power"></i>
-                <span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle"></span>
-            </div>
-        </a>
-    </li>
-</ul>
-
-
-
-           
-<li class="dropdown">
-  <a href="#" data-bs-toggle="dropdown" aria-expanded="false"
-     class="nav-link dropdown-toggle nav-link-lg nav-link-user d-flex align-items-center">
-    
-    <div class="avatar me-2">
-    </div>
-
- <div class="avatar bg-warning me-3 d-inline-block position-relative" style="width: 50px; height: 50px; border-radius: 50%;">
-    <img src="foto.jpg" alt="Avatar de Danny" class="w-100 h-100 rounded-circle" style="object-fit: cover;">
-    <span class="avatar-status bg-success position-absolute bottom-0 end-0 rounded-circle" style="width: 12px; height: 12px; border: 2px solid #fff;"></span>
+    </a>
 </div>
-                
 
-    <div class="d-none d-md-block text-start">
-      <span class="btn btn-sm btn-outline-secondary py-0 px-2" 
-            style="font-size:0.9rem; line-height:1,5;">
-        Danny Jiménez
-      </span>
 
-      
+
+<div class="sidebar-menu"> 
+        <ul class="menu">
+            <li class='sidebar-title'> 
+                <a href="index.php" title="Principal" class="btn btn-sm btn-outline-secondary" 
+                data-bs-toggle="tooltip" data-bs-placement="right">
+                        <i data-feather="home" width="20"></i> 
+                Menu Principal</a>
+            </li>
+
+           <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link' style="color: black;">
+                        <i data-feather="check-square" width="20"></i> 
+                        <span style="color: black;">Configuración</span>
+                    </a>
+                    <ul class="submenu ">
+                        <li>
+                            <a href="usuarios.php">
+                              <i data-feather="user" ></i>     
+                                Usuarios  <i data-feather="chevron-right" ></i>    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="toggle-right" ></i>     
+                                    Perfiles <i data-feather="chevron-right" ></i> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i data-feather="sliders" ></i>     
+                                    Roles <i data-feather="chevron-right" ></i> 
+                            </a>
+                        </li>
+                    </ul>
+               </li>               
+             
+            <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link' style="color: black;">
+                        <i data-feather="trello" width="20"></i> 
+                        <span style="color: black;">Sistemas</span>
+                    </a>
+                    <ul class="submenu ">
+                            <li>
+                                <a href="#">
+                                   <i data-feather="alert-triangle" ></i>     
+                                           Opcion  <i data-feather="chevron-right" ></i>    
+                                </a>
+                         </li>
+                    </ul> 
+            </li>
+                 
+               
+            <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link' style="color: black;">
+                        <i data-feather="hard-drive" width="20"></i> 
+                        <span style="color: black;">Contenedores</span>
+                    </a>
+                    <ul class="submenu ">
+                        <li>
+                        <a href="#">
+                            <i data-feather="alert-triangle" ></i>     
+                                Opcion  <i data-feather="chevron-right" ></i>    
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
      
-    </div>
-  </a>
+            <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link' style="color: black;">
+                        <i data-feather="lock" width="20"></i> 
+                        <span style="color: black;">Seguridad</span>
+                    </a>
+                    <ul class="submenu ">
+                         <li>
+                                <a href="#">
+                                   <i data-feather="alert-triangle" ></i>     
+                                           Opcion  <i data-feather="chevron-right" ></i>    
+                                </a>
+                        </li>
+                    </ul>
+            </li>
+                
+              
+            <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link' style="color: black;">
+                        <i data-feather="edit-3" width="20"></i> 
+                        <span style="color: black;">Reportes</span>
+                    </a>
+                    <ul class="submenu ">
+                         <li>
+                                <a href="#">
+                                   <i data-feather="alert-triangle" ></i>     
+                                           Opcion  <i data-feather="chevron-right" ></i>    
+                                </a>
+                        </li> 
+                 </ul>
+            </li>
+            
+            <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link' style="color: black;">
+                        <i data-feather="monitor" width="20"></i> 
+                        <span style="color: black;">Monitoreo</span>
+                    </a>
+                    <ul class="submenu ">
+                         <li>
+                                <a href="#">
+                                   <i data-feather="alert-triangle" ></i>     
+                                           Opcion  <i data-feather="chevron-right" ></i>    
+                                </a>
+                            </li>
+                    </ul>        
+            </li>
+            
+            <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link' style="color: black;">
+                        <i data-feather="file-text" width="20"></i> 
+                        <span style="color: black;">Auditoria</span>
+                    </a>
 
-<div class="dropdown-menu dropdown-menu-end shadow-lg border-0 rounded-3 p-3" style="min-width: 260px;">
-  <div class="text-center">
-   
-    <div class="position-relative d-inline-block mb-3">
-      <img src="foto.jpg" alt="Avatar de Danny" 
-           class="rounded-circle border border-3 border-light shadow-sm"
-           style="width: 70px; height: 70px; object-fit: cover;">
-    
-      <span class="position-absolute bottom-0 end-0 translate-middle p-1 bg-success border border-2 border-white rounded-circle"></span>
-    </div>
-    
+                    <ul class="submenu ">                        
+                            <li>
+                                <a href="#">
+                                   <i data-feather="alert-triangle" ></i>     
+                                           Opcion  <i data-feather="chevron-right" ></i>    
+                                </a>
+                            </li>            
+                    </ul>
+                    
+            </li>
+                
+                 <hr class="sidebar-separator my-2">
+               
+                
+            <li class='sidebar-title'> 
+                <a href="#" title="Principal" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i data-feather="log-out"></i>    
+                    <span>Cerrar Sesión</span></a>
+            </li>
   
-    <h6 class="mb-0 fw-bold">Danny Jimenez</h6>
-    <div class="d-none d-md-block text-start text-center mt-1 ">
-      <span class="btn btn-sm btn-outline-secondary py-0 px-2" 
-            style="font-size:0.9rem; line-height:1,5;">
-        Administrador
-      </span>
+</ul>
     </div>
-  </div>
-
-  <hr class="my-3">
-
-
-  <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-    <i data-feather="user" class="text-secondary"></i> 
-    <span>Mi Perfil</span>
-  </a>
-  <a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">
-    <i data-feather="settings" class="text-secondary"></i> 
-    <span>Configuración</span>
-  </a>
-
-  <div class="dropdown-divider my-2"></div>
-
-  <a class="dropdown-item d-flex align-items-center gap-2 py-2 text-danger fw-semibold" href="#">
-    <i data-feather="log-out"></i> 
-    <span>Cerrar Sesión</span>
-  </a>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
 </div>
 
 
-
-</li>
-
-        </ul>
-    </div>
-</nav>
+<!-----------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------|
+| NOMBRE    :  DANNY JOSE JIMENEZ GUTIERREZ                                                                  |
+| CEDULA    :  16.029.567                                                                                    |
+| TELEFONO  :  0424-281-44-55                                                                                |
+| CORREO    :  DENNALY88@GMAIL.COM                                                                           |
+|------------------------------------------------------------------------------------------------------------|
+|  SISTEMA    : PHP , POO , MYSQL                                                                            |
+|  DESARROLLADOR WEB                                                                                         |
+|  MIRANDA , CUA  2025                                                                                       |
+-------------------------------------------------------------------------------------------------------------|
+------------------------------------------------------------------------------------------------------------->

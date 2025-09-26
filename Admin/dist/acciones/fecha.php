@@ -1,3 +1,4 @@
+
 <!-----------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------|
 | NOMBRE    :  DANNY JOSE JIMENEZ GUTIERREZ                                                                  |
@@ -9,20 +10,21 @@
 |  DESARROLLADOR WEB                                                                                         |
 |  MIRANDA , CUA  2025                                                                                       |
 -------------------------------------------------------------------------------------------------------------|
-------------------------------------------------------------------------------------------------------------->    
+------------------------------------------------------------------------------------------------------------->
+
+<?php
+class FechaActual {
+    public function imprimirFecha() {
     
-    
-    <script src="assets/js/feather-icons/feather.min.js"></script>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script> 
-    <script src="assets/js/app.js"></script>
-    <script src="assets/vendors/chartjs/Chart.min.js"></script>
-    <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/js/pages/dashboard.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="js/max-min.js"></script>
-    <script src="js/refres.js"></script>
-   
+        $fecha = date('d/m/Y');
+        echo "Fecha: " . $fecha;
+    }
+}
+
+$fechaActual = new FechaActual();
+$fechaActual->imprimirFecha();
+?>
+
 
 <!-----------------------------------------------------------------------------------------------------------|
 |------------------------------------------------------------------------------------------------------------|
